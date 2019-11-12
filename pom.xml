@@ -6,12 +6,10 @@
 
     <groupId>com.weitao</groupId>
     <artifactId>angel</artifactId>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
     <version>1.0-SNAPSHOT</version>
 
-    <modules>
-        <module>activfe</module>
-    </modules>
+
     <!-- 从Spring Boot继承默认值 -->
 
 
@@ -54,7 +52,34 @@
     </dependencies>
 
 
+    <profiles>
+        <profile>
+            <id>dev</id>
+            <activation>
+                <!--默认激活-->
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <spring.profiles.active>dev</spring.profiles.active>
+            </properties>
+        </profile>
+        <profile>
+            <id>prod</id>
+            <properties>
+                <spring.profiles.active>prod</spring.profiles.active>
+            </properties>
+        </profile>
+    </profiles>
 
+    <!-- Package as an executable jar -->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 
 
 </project>

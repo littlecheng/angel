@@ -1,8 +1,8 @@
 server:
-  port: 8080
+  port: 9090
+
+
 spring:
-  profiles:
-    active:  @spring.profiles.active@
   datasource:
     username: root
     password: 852717
