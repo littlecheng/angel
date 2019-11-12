@@ -6,12 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="activfe" />
         <module name="angel" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="activemq" target="1.5" />
+      <module name="activfe" target="1.7" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

@@ -1,8 +1,6 @@
 server:
-  port: 8080
+  port: 80
 spring:
-  profiles:
-    active:  dev
   datasource:
     username: root
     password: 852717
