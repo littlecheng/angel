@@ -3,6 +3,7 @@ package com.weitao.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -10,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 public class redisController {
 
     @Autowired
-    RedisTemplate redisTemplate;
+    StringRedisTemplate redisTemplate;
 
 
     /**
@@ -32,7 +33,7 @@ public class redisController {
      * @return true成功 false失败
      */
     @RequestMapping("/set/{key}/{value}")
-    public boolean set(@PathVariable String key, @PathVariable Object value) {
+    public boolean set(@PathVariable String key, @PathVariable String value) {
         try {
             redisTemplate.opsForValue().set(key, value);
             return true;
