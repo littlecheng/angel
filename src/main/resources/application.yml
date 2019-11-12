@@ -3,6 +3,7 @@ server:
 spring:
   profiles:
     active:  @spring.profiles.active@
+  include: redis    #引入文件application-redis.yml
   datasource:
     username: root
     password: 852717
