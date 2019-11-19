@@ -4,6 +4,11 @@ spring:
   profiles:
     active:  @spring.profiles.active@
   include: redis    #引入文件application-redis.yml
+  jackson:
+    date-format: yyyy-MM-dd
+    time-zone: GMT+8
+    serialization:
+      write-dates-as-timestamps: true           #使用数值表示日期
   datasource:
     username: root
     password: 852717
@@ -46,3 +51,18 @@ logging:
     com:
       weitao:
         mapper : debug
+
+
+
+dog:
+  age: 20
+  name: jack
+  sex: true
+  map: {"sss":"ddd"}
+  list: -a -b,-c
+  user:
+    id: 30
+    userName: kkkkk
+
+
+

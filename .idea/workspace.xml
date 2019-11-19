@@ -5,9 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e94087a-73a6-4873-8b78-c165fd78c42c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/weitao/controller/PropertiesController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/weitao/entity/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/weitao/entity/PropertiesTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/weitao/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/weitao/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/weitao/controller/redisController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/weitao/controller/redisController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/weitao/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/weitao/Application.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,15 +65,16 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\angel\src\main" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.weitao.entity" />
       <recent name="com.weitao.controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Administrator\Desktop\angel\src\main\resources" />
       <recent name="C:\Users\Administrator\Desktop\angel" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Administrator\Desktop\angel\src\main" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -113,19 +121,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MessageConsumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.weitao.queue.MessageConsumer" />
-      <module name="activfe" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.weitao.queue.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MessageProducer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.weitao.queue.MessageProducer" />
       <module name="activfe" />
@@ -139,12 +134,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PropertiesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="angel" />
+      <option name="PACKAGE_NAME" value="com.weitao.entity" />
+      <option name="MAIN_CLASS_NAME" value="com.weitao.entity.PropertiesTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PropertiesTest.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="angel" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.weitao.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.weitao.entity" />
+      <option name="MAIN_CLASS_NAME" value="com.weitao.entity.PropertiesTest" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Application" />
+        <item itemvalue="JUnit.PropertiesTest.contextLoads" />
+        <item itemvalue="JUnit.PropertiesTest" />
         <item itemvalue="Application.IndexController" />
         <item itemvalue="Application.MessageProducer" />
-        <item itemvalue="Application.MessageConsumer" />
       </list>
     </recent_temporary>
   </component>
@@ -166,10 +187,26 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/com/weitao/entity/PropertiesTest.java</url>
+          <line>19</line>
+          <properties class="com.weitao.entity.PropertiesTest" method="contextLoads">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
