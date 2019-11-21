@@ -9,6 +9,22 @@ spring:
     time-zone: GMT+8
     serialization:
       write-dates-as-timestamps: true           #使用数值表示日期
+
+
+  #    freemarker静态资源配置
+  #       设定ftl文件路径
+  freemarker:
+    tempalte-loader-path: classpath:/templates
+    cache: false
+    charset: UTF-8
+    check-template-location: true
+    content-type: text/html
+    expose-request-attributes: true
+    expose-session-attributes: true
+    request-context-attribute: request
+    suffix: .ftl
+
+
   datasource:
     username: root
     password: 852717

@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e94087a-73a6-4873-8b78-c165fd78c42c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/weitao/controller/PropertiesController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/weitao/entity/Dog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/weitao/entity/PropertiesTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/weitao/controller/PageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.ftl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/weitao/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/weitao/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/weitao/controller/redisController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/weitao/controller/redisController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/weitao/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/weitao/Application.class" afterDir="false" />
