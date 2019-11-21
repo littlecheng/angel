@@ -23,7 +23,12 @@ spring:
     expose-session-attributes: true
     request-context-attribute: request
     suffix: .ftl
-
+   # 定位模板的目录
+  mvc:
+      view:
+        prefix: /
+        # 给返回的页面添加后缀名
+        suffix: .html
 
   datasource:
     username: root
