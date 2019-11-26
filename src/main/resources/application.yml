@@ -72,6 +72,8 @@ logging:
     com:
       weitao:
         mapper : debug
+        init: debug
+        controller: info
 
 
 

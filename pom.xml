@@ -64,6 +64,12 @@
             <artifactId>spring-boot-starter-freemarker</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>com.github.org-hejianhui</groupId>
+            <artifactId>spring-boot-starter-rocketmq</artifactId>
+            <version>1.0-RELEASE</version>
+        </dependency>
+
 
 
         <dependency>
