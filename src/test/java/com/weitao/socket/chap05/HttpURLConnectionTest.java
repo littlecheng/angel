@@ -24,7 +24,6 @@ public class HttpURLConnectionTest
         URL url = new URL("https://baijiahao.baidu.com/s?id=1660565967502891745");
 
         HttpURLConnection con = (HttpURLConnection)url.openConnection();
-        //con.connect();
         InputStream in = con.getInputStream();
         int contentLength = con.getContentLength();
         String contentType = con.getContentType();

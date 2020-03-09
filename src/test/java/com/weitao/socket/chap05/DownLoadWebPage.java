@@ -30,6 +30,7 @@ public class DownLoadWebPage
             URL url = new URL("https://baijiahao.baidu.com/s?id=1660565967502891745");
             URLConnection connection = url.openConnection();
             connection.setDoOutput(true);
+            System.out.println(connection.getURL());
 
             //头部信息
             Map<String, List<String>> maps = connection.getHeaderFields();
