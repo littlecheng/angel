@@ -5,51 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e94087a-73a6-4873-8b78-c165fd78c42c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jave-1.0.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/weitao/aop/IUserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/weitao/aop/OrderDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/weitao/aop/TransactionAop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/weitao/aop/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/weitao/aop/demo/LogAspects.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/weitao/aop/demo/MainConfigOfAop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/weitao/aop/demo/MathCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/weitao/aop/demo/IOCTestAOP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/weitao/collecttest/AudioConvertUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/weitao/collecttest/HttpRequestUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/weitao/collecttest/MusicLnfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/weitao/entity/HashSetTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/weitao/entity/StringTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/weitao/entity/TreeMapTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/weitao/entity/finalTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/weitao/inter/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/weitao/inter/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/weitao/inter/Teacher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/weitao/reflectd/Column.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/weitao/reflectd/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap01/FileTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap01/InputStreamTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap01/OutputStreamTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap01/copy/BufferedInputStreamTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap01/copy/BufferedOutputStreamTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap01/copy/TEST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap03/ShallowCopy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap03/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap03/copy/DeepCopy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap03/copy/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap03/copy/Subject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap03/executor/GZipAllFiles.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap03/executor/GZipRunable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap03/executor/whileTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap03/music/MusicCopy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap04/InetAddressTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap05/WriteMessageTo3w.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap08/DayTime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap08/DictClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap09/DayTimeServer.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/test" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap03/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap03/Subject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/weitao/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/weitao/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/weitao/controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/weitao/controller/IndexController.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -139,13 +100,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.InetAddressTest">
-    <configuration name="BufferedInputStreamTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.weitao.socket.chap01.copy.BufferedInputStreamTest" />
+  <component name="RunManager" selected="Application.DayTimeServer">
+    <configuration name="DayTime" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.weitao.socket.chap08.DayTime" />
       <module name="angel" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.weitao.socket.chap01.copy.*" />
+          <option name="PATTERN" value="com.weitao.socket.chap08.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -153,12 +114,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BufferedOutputStreamTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.weitao.socket.chap01.copy.BufferedOutputStreamTest" />
+    <configuration name="DayTimeServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.weitao.socket.chap09.DayTimeServer" />
       <module name="angel" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.weitao.socket.chap01.copy.*" />
+          <option name="PATTERN" value="com.weitao.socket.chap09.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -166,12 +127,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InetAddressTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.weitao.socket.chap04.InetAddressTest" />
+    <configuration name="DownLoadWebPage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.weitao.socket.chap05.DownLoadWebPage" />
       <module name="angel" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.weitao.socket.chap04.*" />
+          <option name="PATTERN" value="com.weitao.socket.chap05.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -179,12 +140,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InputStreamTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.weitao.socket.chap01.InputStreamTest" />
+    <configuration name="HttpURLConnectionTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.weitao.socket.chap05.HttpURLConnectionTest" />
       <module name="angel" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.weitao.socket.chap01.*" />
+          <option name="PATTERN" value="com.weitao.socket.chap05.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -192,12 +153,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TEST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.weitao.socket.chap01.copy.TEST" />
+    <configuration name="WriteMessageTo3w" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.weitao.socket.chap05.WriteMessageTo3w" />
       <module name="angel" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.weitao.socket.chap01.copy.*" />
+          <option name="PATTERN" value="com.weitao.socket.chap05.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -206,19 +167,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.InputStreamTest" />
-      <item itemvalue="Application.BufferedOutputStreamTest" />
-      <item itemvalue="Application.BufferedInputStreamTest" />
-      <item itemvalue="Application.TEST" />
-      <item itemvalue="Application.InetAddressTest" />
+      <item itemvalue="Application.DownLoadWebPage" />
+      <item itemvalue="Application.HttpURLConnectionTest" />
+      <item itemvalue="Application.WriteMessageTo3w" />
+      <item itemvalue="Application.DayTime" />
+      <item itemvalue="Application.DayTimeServer" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.InetAddressTest" />
-        <item itemvalue="Application.TEST" />
-        <item itemvalue="Application.BufferedInputStreamTest" />
-        <item itemvalue="Application.BufferedOutputStreamTest" />
-        <item itemvalue="Application.InputStreamTest" />
+        <item itemvalue="Application.DayTimeServer" />
+        <item itemvalue="Application.DayTime" />
+        <item itemvalue="Application.WriteMessageTo3w" />
+        <item itemvalue="Application.DownLoadWebPage" />
+        <item itemvalue="Application.HttpURLConnectionTest" />
       </list>
     </recent_temporary>
   </component>
@@ -240,7 +201,28 @@
       <option name="project" value="LOCAL" />
       <updated>1583582311580</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="浅、深拷贝,io操作">
+      <created>1583652383487</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1583652383487</updated>
+    </task>
+    <task id="LOCAL-00003" summary="io操作">
+      <created>1583762349158</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1583762349158</updated>
+    </task>
+    <task id="LOCAL-00004" summary="io操作">
+      <created>1583764602617</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1583764602617</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -258,7 +240,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="浅拷贝" />
-    <option name="LAST_COMMIT_MESSAGE" value="浅拷贝" />
+    <MESSAGE value="浅、深拷贝,io操作" />
+    <MESSAGE value="io操作" />
+    <option name="LAST_COMMIT_MESSAGE" value="io操作" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -323,18 +307,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://E:/Program Files/Java/jdk1.8.0_131/src.zip!/java/io/BufferedOutputStream.java</url>
-          <line>80</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://E:/Program Files/Java/jdk1.8.0_131/src.zip!/java/io/BufferedOutputStream.java</url>
           <line>93</line>
           <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://E:/Program Files/Java/jdk1.8.0_131/src.zip!/java/io/FilterOutputStream.java</url>
-          <line>157</line>
-          <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://E:/Program Files/Java/jdk1.8.0_131/src.zip!/java/io/FilterOutputStream.java</url>
@@ -342,19 +316,114 @@
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://E:/Program Files/Java/jdk1.8.0_131/src.zip!/java/io/BufferedOutputStream.java</url>
-          <line>139</line>
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://E:/Program Files/Java/jdk1.8.0_131/src.zip!/java/io/BufferedOutputStream.java</url>
-          <line>140</line>
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/weitao/socket/chap01/copy/TEST.java</url>
           <line>12</line>
           <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://E:/Program Files/Java/jdk1.8.0_131/src.zip!/java/net/URL.java</url>
+          <line>978</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://E:/Program Files/Java/jdk1.8.0_131/src.zip!/java/net/HttpURLConnection.java</url>
+          <line>321</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://E:/Program Files/Java/jdk1.8.0_131/jre/lib/rt.jar!/sun/net/www/protocol/http/Handler.class</url>
+          <line>22</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://E:/Program Files/Java/jdk1.8.0_131/jre/lib/rt.jar!/sun/net/www/protocol/http/Handler.class</url>
+          <line>23</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://E:/Program Files/Java/jdk1.8.0_131/jre/lib/rt.jar!/sun/net/www/protocol/http/Handler.class</url>
+          <line>32</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://E:/Program Files/Java/jdk1.8.0_131/src.zip!/java/net/URL.java</url>
+          <line>656</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://E:/Program Files/Java/jdk1.8.0_131/src.zip!/java/net/URL.java</url>
+          <line>1134</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://E:/Program Files/Java/jdk1.8.0_131/src.zip!/java/net/URL.java</url>
+          <line>523</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://E:/Program Files/Java/jdk1.8.0_131/src.zip!/java/net/URL.java</url>
+          <line>563</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://E:/Program Files/Java/jdk1.8.0_131/src.zip!/java/net/URL.java</url>
+          <line>564</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://E:/Program Files/Java/jdk1.8.0_131/src.zip!/java/net/URL.java</url>
+          <line>568</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://E:/Program Files/Java/jdk1.8.0_131/src.zip!/java/net/URL.java</url>
+          <line>569</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://E:/Program Files/Java/jdk1.8.0_131/src.zip!/java/net/URL.java</url>
+          <line>602</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://E:/Program Files/Java/jdk1.8.0_131/src.zip!/java/net/URL.java</url>
+          <line>438</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://E:/Program Files/Java/jdk1.8.0_131/src.zip!/java/net/URL.java</url>
+          <line>489</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://E:/Program Files/Java/jdk1.8.0_131/src.zip!/java/net/URL.java</url>
+          <line>515</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://E:/Program Files/Java/jdk1.8.0_131/src.zip!/java/net/URL.java</url>
+          <line>555</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://E:/Program Files/Java/jdk1.8.0_131/src.zip!/java/net/URL.java</url>
+          <line>597</line>
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://E:/Program Files/Java/jdk1.8.0_131/src.zip!/java/net/URL.java</url>
+          <line>621</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://E:/Program Files/Java/jdk1.8.0_131/src.zip!/java/net/URLStreamHandler.java</url>
+          <line>125</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://E:/Program Files/Java/jdk1.8.0_131/src.zip!/java/net/URLStreamHandler.java</url>
+          <line>309</line>
+          <option name="timeStamp" value="59" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
