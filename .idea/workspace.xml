@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e94087a-73a6-4873-8b78-c165fd78c42c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap05/WriteMessageTo3w.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap08/DayTime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap08/DictClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap09/DayTimeServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap09/ClientA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap09/ClientB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap09/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap09/WorkThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -100,7 +99,33 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.DayTimeServer">
+  <component name="RunManager">
+    <configuration name="ClientA" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.weitao.socket.chap09.ClientA" />
+      <module name="angel" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.weitao.socket.chap09.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientB" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.weitao.socket.chap09.ClientB" />
+      <module name="angel" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.weitao.socket.chap09.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DayTime" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.weitao.socket.chap08.DayTime" />
       <module name="angel" />
@@ -127,38 +152,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DownLoadWebPage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.weitao.socket.chap05.DownLoadWebPage" />
+    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.weitao.socket.chap09.Server" />
       <module name="angel" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.weitao.socket.chap05.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HttpURLConnectionTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.weitao.socket.chap05.HttpURLConnectionTest" />
-      <module name="angel" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.weitao.socket.chap05.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WriteMessageTo3w" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.weitao.socket.chap05.WriteMessageTo3w" />
-      <module name="angel" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.weitao.socket.chap05.*" />
+          <option name="PATTERN" value="com.weitao.socket.chap09.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -167,19 +166,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.DownLoadWebPage" />
-      <item itemvalue="Application.HttpURLConnectionTest" />
-      <item itemvalue="Application.WriteMessageTo3w" />
       <item itemvalue="Application.DayTime" />
       <item itemvalue="Application.DayTimeServer" />
+      <item itemvalue="Application.Server" />
+      <item itemvalue="Application.ClientA" />
+      <item itemvalue="Application.ClientB" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ClientA" />
+        <item itemvalue="Application.Server" />
+        <item itemvalue="Application.ClientB" />
         <item itemvalue="Application.DayTimeServer" />
         <item itemvalue="Application.DayTime" />
-        <item itemvalue="Application.WriteMessageTo3w" />
-        <item itemvalue="Application.DownLoadWebPage" />
-        <item itemvalue="Application.HttpURLConnectionTest" />
       </list>
     </recent_temporary>
   </component>
@@ -222,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583764602617</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="socket操作">
+      <created>1583855159961</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1583855159961</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -242,7 +248,8 @@
     <MESSAGE value="浅拷贝" />
     <MESSAGE value="浅、深拷贝,io操作" />
     <MESSAGE value="io操作" />
-    <option name="LAST_COMMIT_MESSAGE" value="io操作" />
+    <MESSAGE value="socket操作" />
+    <option name="LAST_COMMIT_MESSAGE" value="socket操作" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -424,6 +431,11 @@
           <url>jar://E:/Program Files/Java/jdk1.8.0_131/src.zip!/java/net/URLStreamHandler.java</url>
           <line>309</line>
           <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/weitao/socket/chap09/WorkThread.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="60" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
