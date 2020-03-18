@@ -27,7 +27,8 @@ public class DownLoadWebPage
         FileOutputStream fileOutputStream = null;
         try
         {
-            URL url = new URL("https://baijiahao.baidu.com/s?id=1660565967502891745");
+            URL url = new URL(
+                "https://c3.ludaogps.com/vod/sx/202003/dvdms-476/00001.ts?key=4b63e3f790243928b851c925e95abeff&e=1584435202");
             URLConnection connection = url.openConnection();
             connection.setDoOutput(true);
             System.out.println(connection.getURL());
