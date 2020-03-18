@@ -4,11 +4,7 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e94087a-73a6-4873-8b78-c165fd78c42c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap09/ClientA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap09/ClientB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap09/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap09/WorkThread.java" afterDir="false" />
+    <list default="true" id="0e94087a-73a6-4873-8b78-c165fd78c42c" name="Default Changelist" comment="socket操作">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -99,7 +95,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.DayTime">
     <configuration name="ClientA" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.weitao.socket.chap09.ClientA" />
       <module name="angel" />
