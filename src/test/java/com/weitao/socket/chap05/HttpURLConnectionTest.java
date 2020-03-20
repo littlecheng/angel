@@ -36,12 +36,14 @@ public class HttpURLConnectionTest
         BufferedOutputStream buf = new BufferedOutputStream(new FileOutputStream(file));
         //DataOutputStream buf = new DataOutputStream(new FileOutputStream(file));
        // BufferedWriter buf  = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(file), Charsets.ISO_8859_1));
-        while ((length = in.read()) != -1)
+       /* while ((length = in.read()) != -1)
             buf.write(length);
-        buf.close();
+            buf.close();
+         */
 
 
-     /*   byte[] datas = new byte[contentLength];
+
+        byte[] datas = new byte[contentLength];
         while(length< contentLength){
             int bytesRead   =  in.read(datas,length,contentLength - length);
             if(bytesRead == -1 ){
@@ -59,6 +61,6 @@ public class HttpURLConnectionTest
         FileOutputStream out = new FileOutputStream(file);
         out.write(datas);
         out.flush();
-        out.close();*/
+        out.close();
     }
 }

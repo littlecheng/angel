@@ -4,7 +4,15 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e94087a-73a6-4873-8b78-c165fd78c42c" name="Default Changelist" comment="socket操作" />
+    <list default="true" id="0e94087a-73a6-4873-8b78-c165fd78c42c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/weitao/m3u8/M3u8Downloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/weitao/m3u8/M3u8File.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/weitao/m3u8/TrustAllTrustManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/weitao/m3u8/TsDownLoadThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/entity/PropertiesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/weitao/entity/PropertiesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap05/HttpURLConnectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap05/HttpURLConnectionTest.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +101,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.DayTime">
+  <component name="RunManager" selected="Application.M3u8Downloader">
     <configuration name="ClientA" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.weitao.socket.chap09.ClientA" />
       <module name="angel" />
@@ -120,12 +128,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DayTime" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.weitao.socket.chap08.DayTime" />
+    <configuration name="DayTimeServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.weitao.socket.chap09.DayTimeServer" />
       <module name="angel" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.weitao.socket.chap08.*" />
+          <option name="PATTERN" value="com.weitao.socket.chap09.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -133,12 +141,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DayTimeServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.weitao.socket.chap09.DayTimeServer" />
+    <configuration name="M3u8Downloader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.weitao.m3u8.M3u8Downloader" />
       <module name="angel" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.weitao.socket.chap09.*" />
+          <option name="PATTERN" value="com.weitao.m3u8.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -160,19 +168,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.DayTime" />
       <item itemvalue="Application.DayTimeServer" />
       <item itemvalue="Application.Server" />
       <item itemvalue="Application.ClientA" />
       <item itemvalue="Application.ClientB" />
+      <item itemvalue="Application.M3u8Downloader" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.M3u8Downloader" />
         <item itemvalue="Application.ClientA" />
         <item itemvalue="Application.Server" />
         <item itemvalue="Application.ClientB" />
         <item itemvalue="Application.DayTimeServer" />
-        <item itemvalue="Application.DayTime" />
       </list>
     </recent_temporary>
   </component>
@@ -222,7 +230,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583855159961</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="workspace">
+      <created>1584534257959</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1584534257959</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -243,19 +258,12 @@
     <MESSAGE value="浅、深拷贝,io操作" />
     <MESSAGE value="io操作" />
     <MESSAGE value="socket操作" />
-    <option name="LAST_COMMIT_MESSAGE" value="socket操作" />
+    <MESSAGE value="workspace" />
+    <option name="LAST_COMMIT_MESSAGE" value="workspace" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/com/weitao/entity/PropertiesTest.java</url>
-          <line>19</line>
-          <properties class="com.weitao.entity.PropertiesTest" method="contextLoads">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/weitao/controller/PageController.java</url>
           <line>5</line>
@@ -270,16 +278,6 @@
           <url>file://$PROJECT_DIR$/src/test/java/com/weitao/entity/StringTest.java</url>
           <line>52</line>
           <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/weitao/aop/demo/IOCTestAOP.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/weitao/aop/demo/IOCTestAOP.java</url>
-          <line>17</line>
-          <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/weitao/collecttest/AudioConvertUtils.java</url>
@@ -320,11 +318,6 @@
           <url>file://$PROJECT_DIR$/src/test/java/com/weitao/socket/chap01/copy/TEST.java</url>
           <line>12</line>
           <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://E:/Program Files/Java/jdk1.8.0_131/src.zip!/java/net/URL.java</url>
-          <line>978</line>
-          <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://E:/Program Files/Java/jdk1.8.0_131/src.zip!/java/net/HttpURLConnection.java</url>
@@ -390,11 +383,6 @@
           <url>jar://E:/Program Files/Java/jdk1.8.0_131/src.zip!/java/net/URL.java</url>
           <line>438</line>
           <option name="timeStamp" value="52" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://E:/Program Files/Java/jdk1.8.0_131/src.zip!/java/net/URL.java</url>
-          <line>489</line>
-          <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://E:/Program Files/Java/jdk1.8.0_131/src.zip!/java/net/URL.java</url>

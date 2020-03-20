@@ -1,6 +1,5 @@
 package com.weitao.entity;
 
-import com.weitao.entity.Dog;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
