@@ -11,8 +11,8 @@ import java.util.ArrayList;
  */
 public class M3u8File
 {
-    String fileName; //文件名
-    String filePath;//文件路径
+    String fileName; //片段文件名
+    String filePath;//片段文件路径
     String tsLengthOfTime;//ts片段时长,单位为秒
 
     public String getFileName()

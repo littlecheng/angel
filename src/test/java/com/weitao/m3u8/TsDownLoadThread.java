@@ -1,7 +1,5 @@
 package com.weitao.m3u8;
 
-import com.google.common.base.Charsets;
-
 import javax.net.ssl.HostnameVerifier;
 import javax.net.ssl.HttpsURLConnection;
 import javax.net.ssl.SSLContext;
@@ -49,57 +47,52 @@ public class TsDownLoadThread implements Runnable
         HttpsURLConnection.setDefaultHostnameVerifier(hv);
     }
 
-    private String filePath;
+    private  M3u8File m3u8File;
+    private String directory;
 
-    private String fileName;
 
-    private String tsLengthOfTime;
-
-    public TsDownLoadThread(String filePath, String fileName, String tsLengthOfTime)
+    public TsDownLoadThread(M3u8File m3u8File,String directory)
     {
-        this.filePath = filePath;
-        this.fileName = fileName;
-        this.tsLengthOfTime = tsLengthOfTime;
+       this.m3u8File = m3u8File;
+       this.directory = directory;
     }
 
     @Override public void run()
     {
-        downLoadByUrl(filePath);
+        downLoadByUrl(m3u8File.getFilePath());
     }
 
     //下载文件
-    private void downLoadByUrl(String tsUrl)
+    private void downLoadByUrl(String tsUrl )
     {
-        InputStream in = null;
+        InputStream input = null;
         FileOutputStream out;
-        File directory = new File("E://ts");
+        File directory = new File("E://ts//"+ this.directory);
         if (!directory.exists())
-        {
-            directory.mkdir();
-        }
+         {
+             directory.mkdirs();
+         }
 
 
-        HttpURLConnection con = null;
         try
         {
-            File file = new File("E://ts//" + fileName);
+            File file = new File("E://ts//" +this.directory+"//"+ m3u8File.getFileName());
             if (!file.exists())
             {
-                URL url = new URL(filePath);
-                con = (HttpURLConnection)url.openConnection();
-                con.setConnectTimeout(600000);//毫秒
-                con.setReadTimeout(600000);//毫秒
+                Thread.sleep(3000);
+                URL url = new URL(m3u8File.getFilePath());
+                HttpURLConnection  con = (HttpURLConnection)url.openConnection();
+                con.setConnectTimeout(800000);//60秒
+                con.setReadTimeout(800000);//60秒
                 con.setRequestMethod("GET");
-                System.out.println(con.getResponseCode());
-
-                in = con.getInputStream();
+                input = con.getInputStream();
                 int contentLength = con.getContentLength();
-                System.out.println(tsUrl + "\t byte=" + contentLength + "\t " + tsLengthOfTime);
+                System.out.println(tsUrl + "\t byte=" + contentLength + "\t " + m3u8File.getTsLengthOfTime());
                 int length = 0;
                 byte[] datas = new byte[contentLength];//根据内容长度动态设置
                 while (length < contentLength)
                 {
-                    int bytesRead = in.read(datas, length, contentLength - length);
+                    int bytesRead = input.read(datas, length, contentLength - length);
                     if (bytesRead == -1)
                     {
                         break;
@@ -110,13 +103,14 @@ public class TsDownLoadThread implements Runnable
 
                 if (length != contentLength)
                 {
-                    throw new IOException("only read " + length + " bytes;Expected " + contentLength + " bytes");
+                    throw new IOException(m3u8File.getFileName() +" only read " + length + " bytes;Expected " + contentLength + " bytes");
                 }
-
                 out = new FileOutputStream(file);
                 out.write(datas);
                 out.flush();
                 out.close();
+                input.close();
+                con.disconnect();
             }
 
         }
@@ -130,23 +124,18 @@ public class TsDownLoadThread implements Runnable
         }
         catch (SocketException e)
         {
-
+            e.printStackTrace();
         }
         catch (SocketTimeoutException e)
         {
             e.printStackTrace();
         }
-        catch (IOException e)
+        catch (InterruptedException e)
         {
             e.printStackTrace();
-        }
-        finally
+        } catch (IOException e)
         {
-            if (con != null)
-            {
-                con.disconnect();
-            }
-
+            e.printStackTrace();
         }
 
     }

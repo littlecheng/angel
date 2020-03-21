@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e94087a-73a6-4873-8b78-c165fd78c42c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/weitao/m3u8/M3u8Downloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/weitao/m3u8/M3u8File.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/weitao/m3u8/TrustAllTrustManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/weitao/m3u8/TsDownLoadThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/entity/PropertiesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/weitao/entity/PropertiesTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap05/HttpURLConnectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap05/HttpURLConnectionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/m3u8/M3u8Downloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/weitao/m3u8/M3u8Downloader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/m3u8/M3u8File.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/weitao/m3u8/M3u8File.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/m3u8/TsDownLoadThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/weitao/m3u8/TsDownLoadThread.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -128,12 +125,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DayTimeServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.weitao.socket.chap09.DayTimeServer" />
+    <configuration name="GZipAllFiles" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.weitao.socket.chap03.executor.GZipAllFiles" />
       <module name="angel" />
+      <option name="PROGRAM_PARAMETERS" value="C:\Users\Administrator\Desktop\教育.m3u8" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.weitao.socket.chap09.*" />
+          <option name="PATTERN" value="com.weitao.socket.chap03.executor.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -144,6 +142,7 @@
     <configuration name="M3u8Downloader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.weitao.m3u8.M3u8Downloader" />
       <module name="angel" />
+      <option name="PROGRAM_PARAMETERS" value="妈妈的干砲性教育.m3u8 妈妈的干砲性教育" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.weitao.m3u8.*" />
@@ -168,19 +167,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.DayTimeServer" />
       <item itemvalue="Application.Server" />
       <item itemvalue="Application.ClientA" />
       <item itemvalue="Application.ClientB" />
       <item itemvalue="Application.M3u8Downloader" />
+      <item itemvalue="Application.GZipAllFiles" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.M3u8Downloader" />
+        <item itemvalue="Application.GZipAllFiles" />
         <item itemvalue="Application.ClientA" />
         <item itemvalue="Application.Server" />
         <item itemvalue="Application.ClientB" />
-        <item itemvalue="Application.DayTimeServer" />
       </list>
     </recent_temporary>
   </component>
@@ -237,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584534257959</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="下载ｔｓ">
+      <created>1584722505412</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1584722505412</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -259,7 +265,8 @@
     <MESSAGE value="io操作" />
     <MESSAGE value="socket操作" />
     <MESSAGE value="workspace" />
-    <option name="LAST_COMMIT_MESSAGE" value="workspace" />
+    <MESSAGE value="下载ｔｓ" />
+    <option name="LAST_COMMIT_MESSAGE" value="下载ｔｓ" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

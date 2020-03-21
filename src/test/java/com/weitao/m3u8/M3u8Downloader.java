@@ -19,17 +19,19 @@ import java.util.concurrent.ThreadPoolExecutor;
  */
 public class M3u8Downloader
 {
+    //传2个参数，第一个参数是源文件目录(文件名称)，第二个参数是目标文件目录(起个文件目录就行)
     public static void main(String[] args)
         throws IOException
     {
-        File file = new File("C:\\Users\\Administrator\\Desktop\\index.m3u8");
+        String dest = "C:\\Users\\Administrator\\Desktop\\ts\\";
+        File file = new File(dest+ args[0]);
+        System.out.println(args[0]+" "+args[1]);
         String domain = "https://2.ddyunbo.com";
-        ArrayList<M3u8File> list = parseM3u8File(file, domain);
+        ArrayList<M3u8File> list = parseM3u8File(file, domain,args[1]);
         Double totalTime = 0d;
-        int size = Runtime.getRuntime().availableProcessors();
-        System.out.println("处理器:" + size);
         ThreadPoolExecutor service = (ThreadPoolExecutor)Executors.newFixedThreadPool(100);
-       // service.submit(new TsDownLoadThread("https://2.ddyunbo.com/20200210/SbhuuDNl/600kb/hls/XhOQ4J56394001.ts","XhOQ4J56394001.ts"));
+
+       //  service.submit(new TsDownLoadThread(list.get(0),args[1]));
        for (M3u8File fi : list)
         {
             //线程数
@@ -40,12 +42,12 @@ public class M3u8Downloader
                 "A new task has been added " + fi.getFileName() + ", activeCount=" + activeCount + ", taskCount="
                     + taskCount + ", queue=" + queue.size());
             totalTime += Double.valueOf(fi.getTsLengthOfTime());
-            service.submit(new TsDownLoadThread(fi.getFilePath(), fi.getFileName(),fi.getTsLengthOfTime()));
+            service.submit(new TsDownLoadThread(fi,args[1]));
 
         }
+        service.shutdown();
         BigDecimal b = new BigDecimal(totalTime);
         System.out.println("影片时长:" + secondToTime(b.longValue()));
-        service.shutdown();
 
     }
 
@@ -77,7 +79,7 @@ public class M3u8Downloader
     }
 
     //根据文件解析ts片段
-    public static ArrayList<M3u8File> parseM3u8File(File file, String domain)
+    public static ArrayList<M3u8File> parseM3u8File(File file, String domain,String parentDirectory)
         throws IOException
     {
         ArrayList<M3u8File> list = new ArrayList<>();//记录ts地址
@@ -87,7 +89,6 @@ public class M3u8Downloader
         M3u8File m3u8File = new M3u8File();
         while ((line = buf.readLine()) != null)
         {
-            System.out.println(line);
             if (twoLine == 2)
             {
                 twoLine = 0;
