@@ -130,7 +130,7 @@
     <configuration name="M3u8Downloader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.weitao.m3u8.M3u8Downloader" />
       <module name="angel" />
-      <option name="PROGRAM_PARAMETERS" value="美丽的身材和美丽的容貌.txt 美丽的身材和美丽的容貌" />
+      <option name="PROGRAM_PARAMETERS" value="すっぴん素人.txt すっぴん素人" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.weitao.m3u8.*" />
@@ -228,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584835575429</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="下载ｔｓ">
+      <created>1584840429162</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1584840429162</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -53,16 +53,16 @@ public class M3u8Downloader
 
         System.out.println("文件片段数量:"+list.size());
         //防止网络原因导致线程没有下载文件
-        while(fileList.length != list.size()){
-            System.out.println("目前文件片段数量:"+fileList.length);
+        while(fileList.length == list.size()){
+            System.out.println("all task complete");
+            String path = BAT_DIREATORY + args[1] + ".bat";
+            generateBAT(BAT_DIREATORY, args[1], list);
+            if(!new File(BAT_DIREATORY+args[1]+".ts").exists()){
+                callCmd(path,false);
+            }
         }
 
-        System.out.println("all task complete");
-        String path = BAT_DIREATORY + args[1] + ".bat";
-        generateBAT(BAT_DIREATORY, args[1], list);
-        if(!new File(BAT_DIREATORY+args[1]+".ts").exists()){
-            callCmd(path,false);
-        }
+
 
     }
 
