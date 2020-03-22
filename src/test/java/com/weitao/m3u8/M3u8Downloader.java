@@ -48,11 +48,21 @@ public class M3u8Downloader
             service.awaitTermination(1, TimeUnit.SECONDS);
         }
 
+        File files = new File(target);
+        File[] fileList = files.listFiles();
+
+        System.out.println("文件片段数量:"+list.size());
+        //防止网络原因导致线程没有下载文件
+        while(fileList.length != list.size()){
+            System.out.println("目前文件片段数量:"+fileList.length);
+        }
+
         System.out.println("all task complete");
         String path = BAT_DIREATORY + args[1] + ".bat";
         generateBAT(BAT_DIREATORY, args[1], list);
-        callCmd(path,false);
-       // callCmd("wmic process where name='cmd.exe' call terminate",true);
+        if(!new File(BAT_DIREATORY+args[1]+".ts").exists()){
+            callCmd(path,false);
+        }
 
     }
 
@@ -115,6 +125,7 @@ public class M3u8Downloader
                 writer.write(builder.toString());
                 writer.close();
             }
+
         }
         catch (IOException e)
         {
