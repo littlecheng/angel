@@ -79,7 +79,7 @@ public class TsDownLoadThread implements Runnable
             File file = new File("E://ts//" +this.directory+"//"+ m3u8File.getFileName());
             if (!file.exists())
             {
-                Thread.sleep(3000);
+                Thread.sleep(1000);
                 URL url = new URL(m3u8File.getFilePath());
                 HttpURLConnection  con = (HttpURLConnection)url.openConnection();
                 con.setConnectTimeout(800000);//60秒
@@ -130,10 +130,11 @@ public class TsDownLoadThread implements Runnable
         {
             e.printStackTrace();
         }
-        catch (InterruptedException e)
+       catch (IOException e)
         {
             e.printStackTrace();
-        } catch (IOException e)
+        }
+        catch (InterruptedException e)
         {
             e.printStackTrace();
         }

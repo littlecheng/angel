@@ -1,14 +1,11 @@
 package com.weitao.m3u8;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.math.BigDecimal;
 import java.util.ArrayList;
-import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @title: M3u8Downloader
@@ -19,36 +16,110 @@ import java.util.concurrent.ThreadPoolExecutor;
  */
 public class M3u8Downloader
 {
-    //传2个参数，第一个参数是源文件目录(文件名称)，第二个参数是目标文件目录(起个文件目录就行)
+    private static final String BAT_DIREATORY = "E:\\ts\\";// cmd 命令的路径
+
     public static void main(String[] args)
-        throws IOException
+        throws IOException, InterruptedException
     {
-        String dest = "C:\\Users\\Administrator\\Desktop\\ts\\";
-        File file = new File(dest+ args[0]);
-        System.out.println(args[0]+" "+args[1]);
-        String domain = "https://2.ddyunbo.com";
-        ArrayList<M3u8File> list = parseM3u8File(file, domain,args[1]);
-        Double totalTime = 0d;
-        ThreadPoolExecutor service = (ThreadPoolExecutor)Executors.newFixedThreadPool(100);
+        Double totalTime = 0d;//记录影片时长
+        String domain = "https://2.ddyunbo.com";//爬取网址
+        String source = "C:\\Users\\Administrator\\Desktop\\ts\\" + args[0];//第一个参数是该目录下的文件名称(如xxx.m3u8)
+        String target = BAT_DIREATORY + args[1];//第二个参数是目标文件目录,如xxx)，第二个参数应该和第一个参数保持同名(不带后缀.m3u8)
 
-       //  service.submit(new TsDownLoadThread(list.get(0),args[1]));
-       for (M3u8File fi : list)
+        File file = new File(source);
+        System.out.println(source + " " + target);
+        ArrayList<M3u8File> list = parseM3u8File(file, domain);
+        ThreadPoolExecutor service = (ThreadPoolExecutor)Executors.newFixedThreadPool(40);
+
+        //  service.submit(new TsDownLoadThread(list.get(0),args[1]));
+        for (M3u8File fi : list)
         {
-            //线程数
-            int activeCount = service.getActiveCount();
-            long taskCount = service.getTaskCount();
-            BlockingQueue queue = service.getQueue();
-            System.out.println(
-                "A new task has been added " + fi.getFileName() + ", activeCount=" + activeCount + ", taskCount="
-                    + taskCount + ", queue=" + queue.size());
             totalTime += Double.valueOf(fi.getTsLengthOfTime());
-            service.submit(new TsDownLoadThread(fi,args[1]));
-
+            service.submit(new TsDownLoadThread(fi, args[1]));
         }
-        service.shutdown();
         BigDecimal b = new BigDecimal(totalTime);
-        System.out.println("影片时长:" + secondToTime(b.longValue()));
+        service.shutdown();
 
+
+        System.out.println("影片时长:" + secondToTime(b.longValue()));
+        System.out.println("pool shutdown:" + service.isShutdown());
+        System.out.println("pool isTerminated:" + service.isTerminated());
+        while (!service.isTerminated()) {
+            service.awaitTermination(1, TimeUnit.SECONDS);
+        }
+
+        System.out.println("all task complete");
+        String path = BAT_DIREATORY + args[1] + ".bat";
+        generateBAT(BAT_DIREATORY, args[1], list);
+        callCmd(path,false);
+       // callCmd("wmic process where name='cmd.exe' call terminate",true);
+
+    }
+
+    //执行bat
+
+    /**
+     *
+     * @param file  bat文件路径
+     * @param isCloseWindow 执行完毕后是否关闭cmd窗口
+     */
+    private static void callCmd(String file,boolean isCloseWindow)
+    {
+        try
+        {
+            String cmdCommand ;
+            if (isCloseWindow)
+            {
+                cmdCommand = "cmd.exe /c start " + file;
+            }
+            else
+            {
+                cmdCommand = "cmd.exe /k start " + file;
+            }
+           Runtime.getRuntime().exec( cmdCommand);
+        }
+        catch (IOException e)
+        {
+            System.out.println(e);
+        }
+    }
+
+
+    //生成bat文件
+
+    /**
+     *
+     * @param target 文件目录地址
+     * @param fileName 文件名
+     * @param list 所需要的文件名称，追加时用的
+     */
+
+    private static void generateBAT(String target, String fileName, ArrayList<M3u8File> list)
+    {
+        try
+        {
+            File file = new File(target + fileName + ".bat");
+            StringBuilder builder = new StringBuilder();
+            builder.append("copy /b ");
+            if (!file.exists())
+            {
+                file.createNewFile();
+                for (M3u8File f : list)
+                {
+                    builder.append(target + fileName + "\\" + f.getFileName());
+                    builder.append("+");
+                }
+                builder.deleteCharAt(builder.toString().length() - 1);
+                builder.append(" " + target + fileName + ".ts");
+                FileWriter writer = new FileWriter(file);
+                writer.write(builder.toString());
+                writer.close();
+            }
+        }
+        catch (IOException e)
+        {
+            e.printStackTrace();
+        }
     }
 
     /**
@@ -79,7 +150,7 @@ public class M3u8Downloader
     }
 
     //根据文件解析ts片段
-    public static ArrayList<M3u8File> parseM3u8File(File file, String domain,String parentDirectory)
+    public static ArrayList<M3u8File> parseM3u8File(File file, String domain)
         throws IOException
     {
         ArrayList<M3u8File> list = new ArrayList<>();//记录ts地址
