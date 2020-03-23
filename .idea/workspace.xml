@@ -7,6 +7,9 @@
     <list default="true" id="0e94087a-73a6-4873-8b78-c165fd78c42c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/m3u8/M3u8Downloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/weitao/m3u8/M3u8Downloader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/m3u8/TsDownLoadThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/weitao/m3u8/TsDownLoadThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap01/copy/BufferedInputStreamTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap01/copy/BufferedInputStreamTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap01/copy/TEST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap01/copy/TEST.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -100,12 +103,25 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.M3u8Downloader">
-    <configuration name="ClientA" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.weitao.socket.chap09.ClientA" />
+    <configuration name="BufferedInputStreamTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.weitao.socket.chap01.copy.BufferedInputStreamTest" />
       <module name="angel" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.weitao.socket.chap09.*" />
+          <option name="PATTERN" value="com.weitao.socket.chap01.copy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BufferedOutputStreamTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.weitao.socket.chap01.copy.BufferedOutputStreamTest" />
+      <module name="angel" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.weitao.socket.chap01.copy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,7 +146,7 @@
     <configuration name="M3u8Downloader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.weitao.m3u8.M3u8Downloader" />
       <module name="angel" />
-      <option name="PROGRAM_PARAMETERS" value="すっぴん素人.txt すっぴん素人" />
+      <option name="PROGRAM_PARAMETERS" value="老公还没下班公公先帮儿子把b操热了等儿子回来就可以轻松插入.txt 老公还没下班公公先帮儿子把b操热了等儿子回来就可以轻松插入" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.weitao.m3u8.*" />
@@ -141,16 +157,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TEST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.weitao.socket.chap01.copy.TEST" />
+      <module name="angel" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.weitao.socket.chap01.copy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.ClientA" />
       <item itemvalue="Application.M3u8Downloader" />
       <item itemvalue="Application.GZipAllFiles" />
+      <item itemvalue="Application.BufferedOutputStreamTest" />
+      <item itemvalue="Application.TEST" />
+      <item itemvalue="Application.BufferedInputStreamTest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.M3u8Downloader" />
+        <item itemvalue="Application.BufferedInputStreamTest" />
+        <item itemvalue="Application.TEST" />
+        <item itemvalue="Application.BufferedOutputStreamTest" />
         <item itemvalue="Application.GZipAllFiles" />
-        <item itemvalue="Application.ClientA" />
       </list>
     </recent_temporary>
   </component>
@@ -235,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584840429162</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="下载ｔｓ">
+      <created>1584844222945</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1584844222945</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -315,7 +355,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/weitao/socket/chap01/copy/TEST.java</url>
-          <line>12</line>
+          <line>13</line>
           <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -358,12 +398,12 @@
           <line>555</line>
           <option name="timeStamp" value="55" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/weitao/socket/chap09/WorkThread.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="60" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="content.getBytes().length" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

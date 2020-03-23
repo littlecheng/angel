@@ -8,7 +8,8 @@ public class TEST {
         try {
             FileOutputStream fos=new FileOutputStream("e://BOSDemo.txt");
             BufferedOutputStream bos=new BufferedOutputStream(fos);
-            String content="我是缓冲输出流测试数据！";
+
+            String content = "1111111111111111111111111111111111111111111111111111111111111111111111";
             bos.write(content.getBytes(),0,content.getBytes().length);
             bos.flush();
           //  bos.close();

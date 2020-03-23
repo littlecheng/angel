@@ -2,7 +2,9 @@ package com.weitao.m3u8;
 
 import java.io.*;
 import java.math.BigDecimal;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
@@ -18,9 +20,13 @@ public class M3u8Downloader
 {
     private static final String BAT_DIREATORY = "E:\\ts\\";// cmd 命令的路径
 
+    private static final String PATTERN = "yyyy.MM.dd HH:mm:ss";
+
     public static void main(String[] args)
         throws IOException, InterruptedException
     {
+
+        System.out.println("main " + new SimpleDateFormat(PATTERN).format(new Date()));
         Double totalTime = 0d;//记录影片时长
         String domain = "https://2.ddyunbo.com";//爬取网址
         String source = "C:\\Users\\Administrator\\Desktop\\ts\\" + args[0];//第一个参数是该目录下的文件名称(如xxx.m3u8)
@@ -29,40 +35,43 @@ public class M3u8Downloader
         File file = new File(source);
         System.out.println(source + " " + target);
         ArrayList<M3u8File> list = parseM3u8File(file, domain);
-        ThreadPoolExecutor service = (ThreadPoolExecutor)Executors.newFixedThreadPool(40);
+        int numberOfCores = Runtime.getRuntime().availableProcessors();
+        int poolSize = (int)(numberOfCores / (1 - 0.9));
+        ThreadPoolExecutor service = (ThreadPoolExecutor)Executors.newFixedThreadPool(poolSize);
 
-        //  service.submit(new TsDownLoadThread(list.get(0),args[1]));
         for (M3u8File fi : list)
         {
             totalTime += Double.valueOf(fi.getTsLengthOfTime());
             service.submit(new TsDownLoadThread(fi, args[1]));
         }
-        BigDecimal b = new BigDecimal(totalTime);
         service.shutdown();
 
-
+        BigDecimal b = new BigDecimal(totalTime);
         System.out.println("影片时长:" + secondToTime(b.longValue()));
         System.out.println("pool shutdown:" + service.isShutdown());
         System.out.println("pool isTerminated:" + service.isTerminated());
-        while (!service.isTerminated()) {
+        while (!service.isTerminated())
+        {
             service.awaitTermination(1, TimeUnit.SECONDS);
         }
 
         File files = new File(target);
         File[] fileList = files.listFiles();
 
-        System.out.println("文件片段数量:"+list.size());
-        //防止网络原因导致线程没有下载文件
-        while(fileList.length == list.size()){
-            System.out.println("all task complete");
-            String path = BAT_DIREATORY + args[1] + ".bat";
-            generateBAT(BAT_DIREATORY, args[1], list);
-            if(!new File(BAT_DIREATORY+args[1]+".ts").exists()){
-                callCmd(path,false);
-            }
+        System.out.println("文件片段数量:" + list.size());
+        System.out.println("main end " + new SimpleDateFormat(PATTERN).format(new Date()));
+        //防止网络原因导致线程没有全部下载完成，就空循环什么也不做，直到下载完成(可能需要重新执行main方法)
+        while (fileList.length != list.size())
+        {
+
         }
-
-
+        System.out.println("all task complete");
+        String path = BAT_DIREATORY + args[1] + ".bat";
+        generateBAT(BAT_DIREATORY, args[1], list);
+        if (!new File(BAT_DIREATORY + args[1] + ".ts").exists())
+        {
+            callCmd(path, false);
+        }
 
     }
 
@@ -73,11 +82,11 @@ public class M3u8Downloader
      * @param file  bat文件路径
      * @param isCloseWindow 执行完毕后是否关闭cmd窗口
      */
-    private static void callCmd(String file,boolean isCloseWindow)
+    private static void callCmd(String file, boolean isCloseWindow)
     {
         try
         {
-            String cmdCommand ;
+            String cmdCommand;
             if (isCloseWindow)
             {
                 cmdCommand = "cmd.exe /c start " + file;
@@ -86,14 +95,13 @@ public class M3u8Downloader
             {
                 cmdCommand = "cmd.exe /k start " + file;
             }
-           Runtime.getRuntime().exec( cmdCommand);
+            Runtime.getRuntime().exec(cmdCommand);
         }
         catch (IOException e)
         {
             System.out.println(e);
         }
     }
-
 
     //生成bat文件
 

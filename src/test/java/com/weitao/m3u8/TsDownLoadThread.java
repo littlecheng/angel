@@ -8,6 +8,8 @@ import java.io.*;
 import java.net.*;
 import java.security.KeyManagementException;
 import java.security.NoSuchAlgorithmException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 /**
  * @title: TsDownLoadThread
@@ -60,13 +62,14 @@ public class TsDownLoadThread implements Runnable
     @Override public void run()
     {
         downLoadByUrl(m3u8File.getFilePath());
+        System.out.println("thread end " + new SimpleDateFormat("yyyy.MM.dd HH:mm:ss").format(new Date()));
     }
 
     //下载文件
     private void downLoadByUrl(String tsUrl )
     {
-        InputStream input = null;
-        FileOutputStream out;
+        BufferedInputStream input = null;
+        BufferedOutputStream out = null;
         File directory = new File("E://ts//"+ this.directory);
         if (!directory.exists())
          {
@@ -85,31 +88,15 @@ public class TsDownLoadThread implements Runnable
                 con.setConnectTimeout(800000);//60秒
                 con.setReadTimeout(800000);//60秒
                 con.setRequestMethod("GET");
-                input = con.getInputStream();
+                input = new BufferedInputStream(con.getInputStream());
+                out = new BufferedOutputStream(new FileOutputStream(file));
                 int contentLength = con.getContentLength();
                 System.out.println(tsUrl + "\t byte=" + contentLength + "\t " + m3u8File.getTsLengthOfTime());
-                int length = 0;
                 byte[] datas = new byte[contentLength];//根据内容长度动态设置
-                while (length < contentLength)
-                {
-                    int bytesRead = input.read(datas, length, contentLength - length);
-                    if (bytesRead == -1)
-                    {
-                        break;
-                    }
-                    length += bytesRead;
-
-                }
-
-                if (length != contentLength)
-                {
-                    throw new IOException(m3u8File.getFileName() +" only read " + length + " bytes;Expected " + contentLength + " bytes");
-                }
-                out = new FileOutputStream(file);
-                out.write(datas);
-                out.flush();
-                out.close();
+                input.read(datas, 0, contentLength);
+                out.write(datas, 0, contentLength);
                 input.close();
+                out.close();
                 con.disconnect();
             }
 
