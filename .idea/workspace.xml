@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0e94087a-73a6-4873-8b78-c165fd78c42c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/collecttest/HttpRequestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/weitao/collecttest/HttpRequestUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/collecttest/HttpRequestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/weitao/collecttest/DownLoadMusic.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +99,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.HttpRequestUtil">
+  <component name="RunManager" selected="Application.DownLoadMusic">
     <configuration name="BufferedInputStreamTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.weitao.socket.chap01.copy.BufferedInputStreamTest" />
       <module name="angel" />
@@ -113,8 +113,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HttpRequestUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.weitao.collecttest.HttpRequestUtil" />
+    <configuration name="DownLoadMusic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.weitao.collecttest.DownLoadMusic" />
       <module name="angel" />
       <extension name="coverage">
         <pattern>
@@ -171,11 +171,11 @@
       <item itemvalue="Application.TEST" />
       <item itemvalue="Application.BufferedInputStreamTest" />
       <item itemvalue="Application.whileTest" />
-      <item itemvalue="Application.HttpRequestUtil" />
+      <item itemvalue="Application.DownLoadMusic" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.HttpRequestUtil" />
+        <item itemvalue="Application.DownLoadMusic" />
         <item itemvalue="Application.whileTest" />
         <item itemvalue="Application.M3u8Downloader" />
         <item itemvalue="Application.BufferedInputStreamTest" />
@@ -278,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584987320748</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="修改歌曲下载">
+      <created>1585113321636</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1585113321636</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -303,7 +310,8 @@
     <MESSAGE value="socket操作" />
     <MESSAGE value="workspace" />
     <MESSAGE value="下载ｔｓ" />
-    <option name="LAST_COMMIT_MESSAGE" value="下载ｔｓ" />
+    <MESSAGE value="修改歌曲下载" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改歌曲下载" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

@@ -7,7 +7,7 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.util.*;
 
-public class HttpRequestUtil
+public class DownLoadMusic
 {
     static String contextPath = "E://music//";
 
