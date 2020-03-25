@@ -1,12 +1,16 @@
 package com.weitao.collecttest;
 
-import java.io.*;
+import java.io.DataInputStream;
+import java.io.File;
+import java.io.FileOutputStream;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.*;
 
-public class HttpRequestUtil {
+public class HttpRequestUtil
+{
     static String contextPath = "E://music//";
+
     static String prefixUrl = "https://music.163.com/song/media/outer/url?id=";
 
     /**
@@ -16,92 +20,140 @@ public class HttpRequestUtil {
      *            发送请求的URL
      * @return URL 所代表远程资源的响应结果
      */
-    public static String sendGet(String url) throws Exception{
-            URL realUrl = new URL(url);
-            // 打开和URL之间的连接
-            URLConnection connection = realUrl.openConnection();
-            // 设置通用的请求属性
-            connection.setRequestProperty("accept", "*/*");
-            connection.setRequestProperty("connection", "Keep-Alive");
-            connection.setRequestProperty("user-agent",
-                    "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1;SV1)");
-            // 建立实际的连接
-            connection.connect();
-            // 获取所有响应头字段
-            Map<String, List<String>> map = connection.getHeaderFields();
-            // 遍历所有的响应头字段
-            for (String key : map.keySet()) {
-                if("Location".equalsIgnoreCase(key)){
-                   return map.get(key).toArray()[0].toString();
-                }
-
+    public static String sendGet(String url)
+        throws Exception
+    {
+        URL realUrl = new URL(url);
+        // 打开和URL之间的连接
+        URLConnection connection = realUrl.openConnection();
+        // 设置通用的请求属性
+        connection.setRequestProperty("accept", "*/*");
+        connection.setRequestProperty("connection", "Keep-Alive");
+        connection.setRequestProperty("user-agent", "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1;SV1)");
+        // 建立实际的连接
+        connection.connect();
+        // 获取所有响应头字段
+        Map<String, List<String>> map = connection.getHeaderFields();
+        // 遍历所有的响应头字段
+        for (String key : map.keySet())
+        {
+            if ("Location".equalsIgnoreCase(key))
+            {
+                return map.get(key).toArray()[0].toString();
             }
-            return "";
+
+        }
+        return "";
     }
 
-
-
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args)
+        throws Exception
+    {
         File music = new File("E://music");
         String suffix = ".mp3";
 
-        if(!music.exists()){
+        if (!music.exists())
+        {
             music.mkdir();
         }
-       List<Map<Integer,MusicLnfo>> list  = fillData();
+        List<Map<Integer, MusicLnfo>> list = fillData();
 
-       for(int i = 0 ;i < list.size() ; i++){
-           Iterator<Map.Entry<Integer,MusicLnfo>> iterator = list.get(i).entrySet().iterator();
-           while (iterator.hasNext()){
-               MusicLnfo musicLnfo =  iterator.next().getValue();
-               String musicUrl = sendGet( musicLnfo.getUrl() + suffix);
-               if(!"404".equalsIgnoreCase(musicUrl)){
-                  String url =  downloadSource(musicUrl,contextPath);//下载歌曲到本地,并返回真实地址
-                  System.out.println("下载歌曲名称 "+url + "\t" + musicLnfo.getUrl() );
-                  File file  = new File(url);
-                  file.renameTo(new File(contextPath+musicLnfo.getTitle()+"-"+musicLnfo.getSinger()+".mp3"));//重命名歌曲名称
-               }
+        for (int i = 0; i < list.size(); i++)
+        {
+            Iterator<Map.Entry<Integer, MusicLnfo>> iterator = list.get(i).entrySet().iterator();
+            while (iterator.hasNext())
+            {
+                MusicLnfo musicLnfo = iterator.next().getValue();
+                String musicUrl = sendGet(musicLnfo.getUrl() + suffix);//得到音乐地址
+                String fileName =
+                    contextPath + musicLnfo.getTitle() + "-" + musicLnfo.getSinger().replaceAll("\\/", "&") + ".mp3";
+                if (!"404".equalsIgnoreCase(musicUrl))
+                {
+                    downloadSource(musicUrl, fileName);//下载歌曲到本地,并返回绝对路径
+                }
 
-           }
-       }
+            }
+        }
 
     }
 
-    private static List<Map<Integer, MusicLnfo>> fillData() {
+    /**
+     * 根据远程资源路径，下载资源到本地临时目录
+     *
+     * @param remoteSourceUrl 远程资源路径
+     * @param fileName   文件路径
+     */
+    private static void downloadSource(String remoteSourceUrl, String fileName)
+        throws Exception
+    {
+        //下载资源
+        File file = new File(fileName);
+        if (!file.exists())
+        {
+            file.createNewFile();
+            URL url = new URL(remoteSourceUrl);
+            DataInputStream dataInputStream = new DataInputStream(url.openStream());
+            FileOutputStream fileOutputStream = new FileOutputStream(file);
+            byte[] bytes = new byte[1024 * 10];
+            int length = 0;
+            while ((length = dataInputStream.read(bytes)) != -1)
+            {
+                fileOutputStream.write(bytes, 0, length);
+            }
+            dataInputStream.close();
+            fileOutputStream.close();
+        }
+    }
 
-        Map<Integer,MusicLnfo> map = new HashMap<>();
-        List<Map<Integer,MusicLnfo>> list = new ArrayList<>();
-         map.put(1,new MusicLnfo(1, prefixUrl+318648,"祝福","叶蒨文"));
-         map.put(2,new MusicLnfo(2,prefixUrl+317868,"情人知己","叶蒨文"));
-         map.put(3,new MusicLnfo(3,prefixUrl+255588,"柿子","林忆莲"));
-         map.put(4,new MusicLnfo(4,prefixUrl+255950,"问","林忆莲"));
-         map.put(5,new MusicLnfo(5,prefixUrl+282231,"如梦初醒","彭羚"));
-         map.put(6,new MusicLnfo(6,prefixUrl+287627,"回家","顺子"));
-         map.put(7,new MusicLnfo(7,prefixUrl+77315,"爱无罪","迪克牛仔"));
-         map.put(8,new MusicLnfo(8,prefixUrl+212436,"归来吧","陈慧娴"));
-         map.put(9,new MusicLnfo(9,prefixUrl+257972,"沙漠寂寞 - (电视剧《还珠格格》插曲)","李翊君"));
-         map.put(10,new MusicLnfo(10,prefixUrl+5257143,"让我取暖","彭羚/王力宏"));
-         map.put(11,new MusicLnfo(11,prefixUrl+329345,"出界","郑秀文"));
-         map.put(12,new MusicLnfo(12,prefixUrl+280775,"回味","彭佳慧"));
-         map.put(13,new MusicLnfo(13,prefixUrl+28186082,"顺流逆流","徐小凤"));
-         map.put(14,new MusicLnfo(14,prefixUrl+484249883,"Опера 2 Прелюдия - (歌剧2)","Vitas"));
-         map.put(15,new MusicLnfo(15,prefixUrl+32477996,"歌剧2","洛天依"));
-         map.put(16,new MusicLnfo(16,prefixUrl+32477997,"海豚音","洛天依"));
-         map.put(17,new MusicLnfo(17,prefixUrl+194405,"笑看风云 - (电视剧《笑看风云》主题曲)","郑少秋"));
-         map.put(18,new MusicLnfo(18,prefixUrl+282273,"让我跟你走","彭羚"));
-         map.put(19,new MusicLnfo(19,prefixUrl+257849,"激情 - (香港电影《旺角卡门》主题曲)","林忆莲"));
-         map.put(20,new MusicLnfo(20,prefixUrl+68350,"梦中人 - (Dream Person)","王菲"));
-         map.put(21,new MusicLnfo(21,prefixUrl+33471594,"Electric Romeo","Immediate Music"));
-         map.put(22,new MusicLnfo(22,prefixUrl+862503252,"83射雕 铁血丹心 激昂版","之乐而乐"));
-         map.put(23,new MusicLnfo(23,prefixUrl+92335,"射雕英雄传 - (电影《射雕英雄传之东成西就》片尾曲)","林穆"));
-         map.put(24,new MusicLnfo(24,prefixUrl+69840,"蓝眼泪 - (电视剧《女人汤》片尾曲)","陈冠蒲"));
-         map.put(25,new MusicLnfo(25,prefixUrl+145662,"留什么给你","孙楠"));
-         map.put(26,new MusicLnfo(26,prefixUrl+255543,"花火","梁咏琪"));
-         map.put(27,new MusicLnfo(27,prefixUrl+254319,"爱你不是两三天","梁静茹"));
-         map.put(28,new MusicLnfo(28,prefixUrl+135768,"懂你","满文军"));
-         map.put(29,new MusicLnfo(29,prefixUrl+368764,"下雨天","南拳妈妈"));
-         map.put(30,new MusicLnfo(30,prefixUrl+257090,"伤痕","林忆莲"));
-         map.put(31,new MusicLnfo(31,prefixUrl+19362736,"No Limit","2 Unlimited"));
+    /**
+     * 根据文件url获取文件名（包含后缀名）
+     *
+     * @param url 文件url
+     * @return 文件名（包含后缀名）
+     */
+    private static String getOriginalFileName(String url)
+    {
+        String[] sarry = url.split("/");
+        return sarry[sarry.length - 1];
+    }
+
+    private static List<Map<Integer, MusicLnfo>> fillData()
+    {
+
+        Map<Integer, MusicLnfo> map = new HashMap<>();
+        List<Map<Integer, MusicLnfo>> list = new ArrayList<>();
+        map.put(1, new MusicLnfo(1, prefixUrl + 213004, "只有梦里来去", "陈松伶/郑少秋"));
+        map.put(2, new MusicLnfo(2, prefixUrl + 194507, "誓要入刀山 - (电视剧《陆小凤之武当之战》主题曲)", "郑少秋"));
+        map.put(3, new MusicLnfo(3, prefixUrl + 194443, "岁月无情 - (无线电视剧《大时代》主题曲)", "郑少秋"));
+        map.put(4, new MusicLnfo(4, prefixUrl + 75844, "新年", "蔡志展"));
+        map.put(5, new MusicLnfo(5, prefixUrl + 75869, "当铺", "蔡志展"));
+        map.put(6, new MusicLnfo(6, prefixUrl + 75878, "杭州湖心亭", "蔡志展"));
+        map.put(7, new MusicLnfo(7, prefixUrl + 144998, "序曲", "Ricky Ho"));
+        map.put(8, new MusicLnfo(8, prefixUrl + 75911, "铸剑山庄", "蔡志展"));
+        map.put(9, new MusicLnfo(9, prefixUrl + 29984787, "重逢", "蔡志展"));
+        map.put(10, new MusicLnfo(10, prefixUrl + 29999226, "红尘破", "蔡志展"));
+        map.put(11, new MusicLnfo(11, prefixUrl + 28793140, "半壶纱", "刘珂矣"));
+        map.put(12, new MusicLnfo(12, prefixUrl + 157143, "谁明浪子心 - (电视剧《还我本色》主题曲)", "王杰"));
+        map.put(13, new MusicLnfo(13, prefixUrl + 298900, "棋子", "王菲"));
+        map.put(14, new MusicLnfo(14, prefixUrl + 93661, "花开在眼前 - (央视纪录片《激荡激荡·1978-2008》片尾曲)", "韩磊"));
+        map.put(15, new MusicLnfo(15, prefixUrl + 29787426, "Freaks (Radio Edit)", "Timmy Trumpet/Savage"));
+        map.put(16, new MusicLnfo(16, prefixUrl + 22843672, "Trouble Maker", "Trouble Maker"));
+        map.put(17, new MusicLnfo(17, prefixUrl + 419877515, "穿越时空的思念（Cover：和田薫）", "昼夜"));
+        map.put(18, new MusicLnfo(18, prefixUrl + 297701, "Hihi Byebye", "王心凌"));
+        map.put(19, new MusicLnfo(19, prefixUrl + 104013, "烟火", "姜育恒"));
+        map.put(20, new MusicLnfo(20, prefixUrl + 255858, "词不达意", "林忆莲"));
+        map.put(21, new MusicLnfo(21, prefixUrl + 256638, "铿锵玫瑰", "林忆莲"));
+        map.put(22, new MusicLnfo(22, prefixUrl + 256838, "诱惑的街", "林忆莲"));
+        map.put(23, new MusicLnfo(23, prefixUrl + 5255650, "伤痕", "林忆莲"));
+        map.put(24, new MusicLnfo(24, prefixUrl + 30064175, "Horizon", "Janji"));
+        map.put(25, new MusicLnfo(25, prefixUrl + 254270, "燕尾蝶", "梁静茹"));
+        map.put(26,
+            new MusicLnfo(26, prefixUrl + 418602088, "Nevada (feat. Cozi Zuehlsdorff)", "Vicetone/Cozi Zuehlsdorff"));
+        map.put(27, new MusicLnfo(27, prefixUrl + 436487129, "Move Your Body (Alan Walker Remix)", "Sia/Alan Walker"));
+        map.put(28, new MusicLnfo(28, prefixUrl + 93725, "等待 - (电视剧《汉武大帝》主题曲)", "韩磊"));
+        map.put(29, new MusicLnfo(29, prefixUrl + 22845457, "불꽃 - (火花)", "高耀太"));
+        map.put(30, new MusicLnfo(30, prefixUrl + 262239, "你潇洒我漂亮", "李玲玉"));
+        /* map.put(31,new MusicLnfo(31,prefixUrl+19362736,"No Limit","2 Unlimited"));
          map.put(32,new MusicLnfo(32,prefixUrl+258134,"永远永远 - (电视剧《风云之雄霸天下》片尾曲)","李翊君"));
          map.put(33,new MusicLnfo(33,prefixUrl+529747142,"重来","蔡健雅"));
          map.put(34,new MusicLnfo(34,prefixUrl+299936,"红豆","王菲"));
@@ -1070,47 +1122,9 @@ public class HttpRequestUtil {
          map.put(997,new MusicLnfo(997,prefixUrl+29715668,"Heartbeat","Mat Kearney"));
          map.put(998,new MusicLnfo(998,prefixUrl+400162575,"Union","Her"));
          map.put(999,new MusicLnfo(999,prefixUrl+1937589,"Let's Stay Together","Seal"));
-         map.put(1000,new MusicLnfo(1000,prefixUrl+415904452,"Treat You Better","Shawn Mendes"));
+         map.put(1000,new MusicLnfo(1000,prefixUrl+415904452,"Treat You Better","Shawn Mendes"));*/
         list.add(map);
-        return  list;
-    }
-
-
-    /**
-     * 根据文件url获取文件名（包含后缀名）
-     *
-     * @param url 文件url
-     * @return 文件名（包含后缀名）
-     */
-    private static String getOriginalFileName(String url) {
-        String[] sarry = url.split("/");
-        return sarry[sarry.length - 1];
-    }
-
-    /**
-     * 根据远程资源路径，下载资源到本地临时目录
-     *
-     * @param remoteSourceUrl 远程资源路径
-     * @param tmpFileFolder   本地临时目录
-     * @return 下载后的文件物理路径
-     */
-    private static String downloadSource(String remoteSourceUrl, String tmpFileFolder) throws Exception {
-        //下载资源
-        URL url = new URL(remoteSourceUrl);
-        DataInputStream dataInputStream = new DataInputStream(url.openStream());
-        String tmpFilePath = tmpFileFolder + getOriginalFileName(remoteSourceUrl);
-        FileOutputStream fileOutputStream = new FileOutputStream(new File(tmpFilePath));
-        byte[] bytes = new byte[1024*10];
-        int length = 0;
-        while ((length = dataInputStream.read(bytes)) != -1) {
-            fileOutputStream.write(bytes, 0, length);
-            // System.out.println("下载中....");
-        }
-        // System.out.println("下载完成...");
-        dataInputStream.close();
-        fileOutputStream.close();
-
-        return tmpFilePath;
+        return list;
     }
 
 }
