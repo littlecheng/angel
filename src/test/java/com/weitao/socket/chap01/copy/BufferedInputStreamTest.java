@@ -18,7 +18,7 @@ public class BufferedInputStreamTest
     public static void testReadWith3param()
     {
         System.out.println(" begin " + new SimpleDateFormat(PATTERN).format(new Date()));
-        String pathName = "e://test copy.ts";
+        String pathName = "e://ddd.ts";
         String path = "e://test copy7.ts";
         InputStream in = null;
         OutputStream out = null;
@@ -26,18 +26,12 @@ public class BufferedInputStreamTest
         {
             in = new BufferedInputStream(new FileInputStream(pathName));
             out = new BufferedOutputStream(new FileOutputStream(path));
-         /*   byte[] arr = new byte[2048];
+            byte[] arr = new byte[2048];
             int len = 0;
             while ((len = in.read(arr, 0, arr.length)) != -1)
             {
                 out.write(arr, 0, len);
             }
-            out.flush();
-            in.close();*/
-
-            //最好设置文件内容大小,一次性写入，不需要循环
-            byte[] arr = new byte[148150788];
-            out.write(arr, 0, arr.length);
             out.flush();
             in.close();
 
