@@ -4,9 +4,11 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e94087a-73a6-4873-8b78-c165fd78c42c" name="Default Changelist" comment="">
+    <list default="true" id="0e94087a-73a6-4873-8b78-c165fd78c42c" name="Default Changelist" comment="修改歌曲下载">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/weitao/entity/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/collecttest/HttpRequestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/weitao/collecttest/DownLoadMusic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/collecttest/DownLoadMusic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/weitao/collecttest/DownLoadMusic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/nio/ReadData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/weitao/nio/ReadData.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -100,19 +102,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.DownLoadMusic">
-    <configuration name="BufferedInputStreamTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.weitao.socket.chap01.copy.BufferedInputStreamTest" />
-      <module name="angel" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.weitao.socket.chap01.copy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="DownLoadMusic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.weitao.collecttest.DownLoadMusic" />
       <module name="angel" />
@@ -126,10 +115,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="HttpURLConnectionTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.weitao.socket.chap05.HttpURLConnectionTest" />
+      <module name="angel" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.weitao.socket.chap05.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="M3u8Downloader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.weitao.m3u8.M3u8Downloader" />
       <module name="angel" />
-      <option name="PROGRAM_PARAMETERS" value="极品少妇系列百多え.txt 极品少妇系列百多え" />
+      <option name="PROGRAM_PARAMETERS" value="被上司潜规则侵犯小穴.txt 被上司潜规则侵犯小穴" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.weitao.m3u8.*" />
@@ -140,12 +142,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TEST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.weitao.socket.chap01.copy.TEST" />
+    <configuration name="ReadData" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.weitao.nio.ReadData" />
       <module name="angel" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.weitao.socket.chap01.copy.*" />
+          <option name="PATTERN" value="com.weitao.nio.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -153,12 +155,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="whileTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.weitao.socket.chap03.executor.whileTest" />
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.weitao.entity.Test" />
       <module name="angel" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.weitao.socket.chap03.executor.*" />
+          <option name="PATTERN" value="com.weitao.entity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -168,18 +170,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.M3u8Downloader" />
-      <item itemvalue="Application.TEST" />
-      <item itemvalue="Application.BufferedInputStreamTest" />
-      <item itemvalue="Application.whileTest" />
+      <item itemvalue="Application.HttpURLConnectionTest" />
+      <item itemvalue="Application.Test" />
+      <item itemvalue="Application.ReadData" />
       <item itemvalue="Application.DownLoadMusic" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.DownLoadMusic" />
-        <item itemvalue="Application.whileTest" />
+        <item itemvalue="Application.ReadData" />
+        <item itemvalue="Application.Test" />
         <item itemvalue="Application.M3u8Downloader" />
-        <item itemvalue="Application.BufferedInputStreamTest" />
-        <item itemvalue="Application.TEST" />
+        <item itemvalue="Application.HttpURLConnectionTest" />
       </list>
     </recent_temporary>
   </component>
@@ -285,7 +287,35 @@
       <option name="project" value="LOCAL" />
       <updated>1585113321636</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="修改歌曲下载">
+      <created>1585114284841</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1585114284841</updated>
+    </task>
+    <task id="LOCAL-00015" summary="下载ｔｓ">
+      <created>1585195942823</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1585195942823</updated>
+    </task>
+    <task id="LOCAL-00016" summary="修改歌曲下载">
+      <created>1585195981710</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1585195981711</updated>
+    </task>
+    <task id="LOCAL-00017" summary="修改歌曲下载">
+      <created>1585196035290</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1585196035290</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

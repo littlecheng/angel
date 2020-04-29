@@ -30,10 +30,12 @@ public class ReadData
             }
             inputStream = new FileInputStream(file);
             fileChannel = inputStream.getChannel();
-            ByteBuffer buffer = ByteBuffer.allocate(10);
+            ByteBuffer buffer = ByteBuffer.allocate(20);
             int byteRead = fileChannel.read(buffer);
             while (byteRead != -1)
             {
+
+                System.out.println("Read " + byteRead);
                 //切换模式为读模式，其实就是把postion位置设置为0，可以从0开始读取
                 buffer.flip();
                 //如果缓冲区还有数据
@@ -47,6 +49,7 @@ public class ReadData
                 buffer.clear();
                 //继续把通道内剩余数据写入缓冲区
                 byteRead = fileChannel.read(buffer);
+                System.out.println(" byteRead=" + byteRead);
             }
         }
         catch (FileNotFoundException e)
