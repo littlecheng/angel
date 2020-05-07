@@ -1,0 +1,63 @@
+server:
+  port: 8085
+
+spring:
+  profiles:
+    active:  dev
+  include: redis    #引入文件application-redis.yml
+  jackson:
+    date-format: yyyy-MM-dd
+    time-zone: GMT+8
+    serialization:
+      write-dates-as-timestamps: true           #使用数值表示日期
+
+
+  #    freemarker静态资源配置
+  #       设定ftl文件路径
+  freemarker:
+    tempalte-loader-path: classpath:/templates
+    cache: false
+    charset: UTF-8
+    check-template-location: true
+    content-type: text/html
+    expose-request-attributes: true
+    expose-session-attributes: true
+    request-context-attribute: request
+    suffix: .ftl
+    # 定位模板的目录
+  mvc:
+    view:
+      prefix: /
+      # 给返回的页面添加后缀名
+      suffix: .html
+
+#showSql
+logging:
+  level:
+    com:
+      weitao:
+        mapper: debug
+        init: debug
+        controller: info
+
+
+
+dog:
+  age: 20
+  name: jack
+  sex: true
+  map: {"sss":"ddd"}
+  list: -a -b,-c
+  user:
+    id: 30
+    userName: kkkkk
+
+
+
+dubbo:
+  application:
+    name: dubbo-consumer  # Spring boot application
+  registry:
+    address: zookeeper://127.0.0.1:2181
+    client: curator
+    file: ${user.home}/dubbo-cache/${spring.application.name}/dubbo.cache

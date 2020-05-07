@@ -1,20 +1,286 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AnalysisUIOptions">
+    <option name="ANALYZE_TEST_SOURCES" value="false" />
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e94087a-73a6-4873-8b78-c165fd78c42c" name="Default Changelist" comment="修改歌曲下载">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/weitao/entity/Test.java" afterDir="false" />
+    <list default="true" id="0e94087a-73a6-4873-8b78-c165fd78c42c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_1_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_spring_boot_starter_1_1_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_spring_spring_context_support_1_0_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_10_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_10_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_10_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_10_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_10_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_10_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_20_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_4_1_25_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_validation_jakarta_validation_api_2_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jline_jline_0_9_94.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_6_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_client_4_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_framework_4_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_recipes_4_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_dubbo_dubbo_2_7_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_dubbo_dubbo_spring_boot_autoconfigure_2_7_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_dubbo_dubbo_spring_boot_autoconfigure_compatible_2_7_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_dubbo_dubbo_spring_boot_starter_2_7_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_12_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_12_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_33.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_33.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_33.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_yetus_audience_annotations_0_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjrt_1_9_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_18_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_20_0_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_30.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_2_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_2_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_2_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_2_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_2_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_2_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_2_2_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_2_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_2_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_3_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-api/dubboapi.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-api/target/classes/META-INF/dubboapi.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-api/target/classes/com/weitao/entity/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-api/target/classes/com/weitao/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/dubboconsumer.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/src/main/java/com/weitao/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/src/main/java/com/weitao/controller/PropertiesController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/classes/META-INF/dubboconsumer.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/classes/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/classes/application-prod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/classes/application-redis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/classes/com/weitao/Application.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/classes/com/weitao/aop/IUserDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/classes/com/weitao/aop/OrderDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/classes/com/weitao/aop/TransactionAop.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/classes/com/weitao/aop/UserDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/classes/com/weitao/aop/demo/LogAspects.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/classes/com/weitao/aop/demo/MainConfigOfAop.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/classes/com/weitao/aop/demo/MathCalculator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/classes/com/weitao/controller/IndexController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/classes/com/weitao/controller/PageController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/classes/com/weitao/controller/PropertiesController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/classes/com/weitao/controller/redisController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/classes/com/weitao/init/init.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/classes/com/weitao/vo/Dog.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/classes/static/css/test.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/classes/static/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/classes/templates/index.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/collecttest/DownLoadMusic.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/collecttest/MusicLnfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/entity/HashSetTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/entity/StringTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/entity/TreeMapTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/entity/finalTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/inter/Person.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/inter/Student.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/inter/Teacher.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/m3u8/M3u8Downloader.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/m3u8/M3u8File.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/m3u8/TrustAllTrustManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/m3u8/TsDownLoadThread.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/nio/C2C.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/nio/DatagramChannelTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/nio/GatheringTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/nio/ReadData.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/nio/SelectorTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/nio/ServerSocketChannelTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/nio/SocketChannelTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/nio/WriteData.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/nio/chat/ChatServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/nio/chat/Client.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/nio/chat/ClientThread.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/nio/chat/ServerHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/nio/pipeTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/nio/scatteringTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/programme/ListFiles.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/programme/StringUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/reflectd/Column.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/reflectd/Person.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/socket/chap01/FileTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/socket/chap01/InputStreamTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/socket/chap01/OutputStreamTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/socket/chap01/copy/BufferedInputStreamTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/socket/chap01/copy/BufferedOutputStreamTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/socket/chap01/copy/TEST.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/socket/chap03/ShallowCopy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/socket/chap03/Student.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/socket/chap03/Subject.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/socket/chap03/copy/DeepCopy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/socket/chap03/copy/Student.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/socket/chap03/copy/Subject.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/socket/chap03/executor/GZipAllFiles.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/socket/chap03/executor/GZipRunable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/socket/chap03/executor/whileTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/socket/chap03/music/MusicCopy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/socket/chap04/InetAddressTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/socket/chap05/DownLoadWebPage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/socket/chap05/HttpURLConnectionTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/socket/chap05/URLTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/socket/chap05/WriteMessageTo3w.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/socket/chap08/DayTime.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/socket/chap08/DictClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/socket/chap09/ClientA.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/socket/chap09/ClientB.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/socket/chap09/DayTimeServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/socket/chap09/Server.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-consumer/target/test-classes/com/weitao/socket/chap09/WorkThread.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-provider/dubboprovider.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-provider/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-provider/src/main/java/com/weitao/HelloDubboServiceUserProviderApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-provider/src/main/java/com/weitao/service/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-provider/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-provider/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-provider/target/classes/com/weitao/HelloDubboServiceUserProviderApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-provider/target/classes/com/weitao/mapper/UserMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-provider/target/classes/com/weitao/service/UserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-provider/target/classes/mapping/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/collecttest/DownLoadMusic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/weitao/collecttest/DownLoadMusic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/nio/ReadData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/weitao/nio/ReadData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/angel.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jave-1.0.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/weitao/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/weitao/aop/IUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/main/java/com/weitao/aop/IUserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/weitao/aop/OrderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/main/java/com/weitao/aop/OrderDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/weitao/aop/TransactionAop.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/main/java/com/weitao/aop/TransactionAop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/weitao/aop/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/main/java/com/weitao/aop/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/weitao/aop/demo/LogAspects.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/main/java/com/weitao/aop/demo/LogAspects.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/weitao/aop/demo/MainConfigOfAop.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/main/java/com/weitao/aop/demo/MainConfigOfAop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/weitao/aop/demo/MathCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/main/java/com/weitao/aop/demo/MathCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/weitao/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/main/java/com/weitao/controller/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/weitao/controller/PageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/main/java/com/weitao/controller/PageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/weitao/controller/PropertiesController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/weitao/controller/redisController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/main/java/com/weitao/controller/redisController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/weitao/entity/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/main/java/com/weitao/vo/Dog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/weitao/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-api/src/main/java/com/weitao/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/weitao/init/init.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/main/java/com/weitao/init/init.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/weitao/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-provider/src/main/java/com/weitao/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/weitao/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-api/src/main/java/com/weitao/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/main/resources/application-prod.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-redis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/main/resources/application-redis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapping/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-provider/src/main/resources/mapping/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/test.css" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/main/resources/static/css/test.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/main/resources/static/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/main/resources/templates/index.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/aop/demo/IOCTestAOP.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/demo/IOCTestAOP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/collecttest/AudioConvertUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/collecttest/DownLoadMusic.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/collecttest/DownLoadMusic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/collecttest/MusicLnfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/collecttest/MusicLnfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/entity/HashSetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/entity/HashSetTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/entity/PropertiesTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/entity/StringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/entity/StringTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/entity/TreeMapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/entity/TreeMapTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/entity/finalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/entity/finalTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/inter/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/inter/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/inter/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/inter/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/inter/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/inter/Teacher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/m3u8/M3u8Downloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/m3u8/M3u8Downloader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/m3u8/M3u8File.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/m3u8/M3u8File.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/m3u8/TrustAllTrustManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/m3u8/TrustAllTrustManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/m3u8/TsDownLoadThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/m3u8/TsDownLoadThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/nio/C2C.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/nio/C2C.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/nio/DatagramChannelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/nio/DatagramChannelTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/nio/GatheringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/nio/GatheringTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/nio/ReadData.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/nio/ReadData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/nio/SelectorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/nio/SelectorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/nio/ServerSocketChannelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/nio/ServerSocketChannelTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/nio/SocketChannelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/nio/SocketChannelTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/nio/WriteData.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/nio/WriteData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/nio/chat/ChatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/nio/chat/ChatServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/nio/chat/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/nio/chat/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/nio/chat/ClientThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/nio/chat/ClientThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/nio/chat/ServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/nio/chat/ServerHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/nio/pipeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/nio/pipeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/nio/scatteringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/nio/scatteringTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/programme/ListFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/programme/ListFiles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/programme/StringUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/programme/StringUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/reflectd/Column.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/reflectd/Column.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/reflectd/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/reflectd/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap01/FileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/socket/chap01/FileTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap01/InputStreamTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/socket/chap01/InputStreamTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap01/OutputStreamTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/socket/chap01/OutputStreamTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap01/copy/BufferedInputStreamTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/socket/chap01/copy/BufferedInputStreamTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap01/copy/BufferedOutputStreamTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/socket/chap01/copy/BufferedOutputStreamTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap01/copy/TEST.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/socket/chap01/copy/TEST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap03/ShallowCopy.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/socket/chap03/ShallowCopy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap03/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/socket/chap03/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap03/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/socket/chap03/Subject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap03/copy/DeepCopy.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/socket/chap03/copy/DeepCopy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap03/copy/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/socket/chap03/copy/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap03/copy/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/socket/chap03/copy/Subject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap03/executor/GZipAllFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/socket/chap03/executor/GZipAllFiles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap03/executor/GZipRunable.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/socket/chap03/executor/GZipRunable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap03/executor/whileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/socket/chap03/executor/whileTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap03/music/MusicCopy.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/socket/chap03/music/MusicCopy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap04/InetAddressTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/socket/chap04/InetAddressTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap05/DownLoadWebPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/socket/chap05/DownLoadWebPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap05/HttpURLConnectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/socket/chap05/HttpURLConnectionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap05/URLTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/socket/chap05/URLTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap05/WriteMessageTo3w.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/socket/chap05/WriteMessageTo3w.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap08/DayTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/socket/chap08/DayTime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap08/DictClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/socket/chap08/DictClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap09/ClientA.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/socket/chap09/ClientA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap09/ClientB.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/socket/chap09/ClientB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap09/DayTimeServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/socket/chap09/DayTimeServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap09/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/socket/chap09/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap09/WorkThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-consumer/src/test/java/com/weitao/socket/chap09/WorkThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application-dev.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application-prod.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/weitao/Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/weitao/controller/IndexController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/weitao/entity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/weitao/mapper/UserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/weitao/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapping/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="angel" />
@@ -34,13 +300,19 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="D:/apache-maven-3.0.5" />
-        <option name="userSettingsFile" value="D:\apache-maven-3.0.5\conf\settings.xml" />
+        <option name="alwaysUpdateSnapshots" value="true" />
+        <option name="localRepository" value="D:\m2\repo" />
+        <option name="mavenHome" value="D:/apache-maven-3.6.3" />
+        <option name="usePluginRegistry" value="true" />
+        <option name="userSettingsFile" value="D:\apache-maven-3.6.3\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
       <MavenImportingSettings>
+        <option name="excludeTargetFolder" value="false" />
         <option name="importAutomatically" value="true" />
+        <option name="jdkForImporter" value="1.8" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
       </MavenImportingSettings>
     </option>
     <option name="enabledProfiles">
@@ -54,34 +326,42 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/com/weitao/socket/chap01/copy" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="last_opened_file_path" value="E:/test/dubbo-admin" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.37011495" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.weitao.m3u8" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Administrator\Desktop\angel\src\main" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.weitao.inter" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.weitao.aop.demo" />
       <recent name="com.weitao.entity" />
       <recent name="com.weitao.controller" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.weitao.inter" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Administrator\Desktop\angel\src\test\java\com\weitao\socket\chap01\copy" />
-      <recent name="C:\Users\Administrator\Desktop\angel\src\test\java\com\weitao\socket\chap03\copy" />
-      <recent name="C:\Users\Administrator\Desktop\angel\src\main\resources" />
-      <recent name="C:\Users\Administrator\Desktop\angel" />
+      <recent name="C:\Users\Administrator\Desktop\angel\dubbo-provider\src\main\resources" />
+      <recent name="C:\Users\Administrator\Desktop\angel\dubbo-api\src\main\java\com\weitao\entity" />
+      <recent name="C:\Users\Administrator\Desktop\angel\dubbo-consumer\src" />
+      <recent name="C:\Users\Administrator\Desktop\angel\dubbo-consumer\src\test\java\com\weitao" />
+      <recent name="C:\Users\Administrator\Desktop\angel\dubbo-provider\src\main\java\com\weitao" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.weitao.vo" />
+      <recent name="com.weitao.init" />
+      <recent name="com.weitao" />
+      <recent name="com.weitao.service" />
+      <recent name="com.weitao.m3u8" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\angel\dubbo-provider\src\main\resources" />
+      <recent name="C:\Users\Administrator\Desktop\angel\dubbo-provider\src\main\resources\spring" />
+      <recent name="C:\Users\Administrator\Desktop\angel\src\main" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -101,7 +381,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.DownLoadMusic">
+  <component name="RunManager" selected="Application.Application">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.weitao.Application" />
+      <module name="dubboconsumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.weitao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DownLoadMusic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.weitao.collecttest.DownLoadMusic" />
       <module name="angel" />
@@ -115,12 +408,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HttpURLConnectionTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.weitao.socket.chap05.HttpURLConnectionTest" />
-      <module name="angel" />
+    <configuration name="DubboAutoConfigurationConsumerBootstrap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.weitao.DubboAutoConfigurationConsumerBootstrap" />
+      <module name="dubboconsumer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.weitao.socket.chap05.*" />
+          <option name="PATTERN" value="com.weitao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -128,13 +421,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="M3u8Downloader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.weitao.m3u8.M3u8Downloader" />
-      <module name="angel" />
-      <option name="PROGRAM_PARAMETERS" value="被上司潜规则侵犯小穴.txt 被上司潜规则侵犯小穴" />
+    <configuration name="HelloDubboServiceUserProviderApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.weitao.HelloDubboServiceUserProviderApplication" />
+      <module name="dubboprovider" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.weitao.m3u8.*" />
+          <option name="PATTERN" value="com.weitao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -142,46 +434,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReadData" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.weitao.nio.ReadData" />
-      <module name="angel" />
+    <configuration name="PropertiesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dubboconsumer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.weitao.nio.*" />
+          <option name="PATTERN" value="com.weitao.vo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.weitao.entity.Test" />
-      <module name="angel" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.weitao.entity.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="PACKAGE_NAME" value="com.weitao.entity" />
+      <option name="MAIN_CLASS_NAME" value="com.weitao.entity.PropertiesTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.M3u8Downloader" />
-      <item itemvalue="Application.HttpURLConnectionTest" />
-      <item itemvalue="Application.Test" />
-      <item itemvalue="Application.ReadData" />
       <item itemvalue="Application.DownLoadMusic" />
+      <item itemvalue="Application.Application" />
+      <item itemvalue="Application.DubboAutoConfigurationConsumerBootstrap" />
+      <item itemvalue="Application.HelloDubboServiceUserProviderApplication" />
+      <item itemvalue="JUnit.PropertiesTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Application" />
+        <item itemvalue="Application.HelloDubboServiceUserProviderApplication" />
+        <item itemvalue="Application.DubboAutoConfigurationConsumerBootstrap" />
+        <item itemvalue="JUnit.PropertiesTest" />
         <item itemvalue="Application.DownLoadMusic" />
-        <item itemvalue="Application.ReadData" />
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Application.M3u8Downloader" />
-        <item itemvalue="Application.HttpURLConnectionTest" />
       </list>
     </recent_temporary>
   </component>
@@ -315,7 +596,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585196035290</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="修改歌曲下载">
+      <created>1588121756145</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1588121756145</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -334,6 +622,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="浅拷贝" />
     <MESSAGE value="浅、深拷贝,io操作" />
     <MESSAGE value="io操作" />
@@ -392,6 +681,14 @@
           <url>jar://E:/Program Files/Java/jdk1.8.0_131/src.zip!/java/net/URL.java</url>
           <line>656</line>
           <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/dubbo-consumer/src/main/java/com/weitao/controller/IndexController.java</url>
+          <line>27</line>
+          <properties class="com.weitao.controller.IndexController" method="GetUser">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="43" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

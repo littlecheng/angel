@@ -1,22 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+    <option name="USE_RELEASE_OPTION" value="false" />
     <annotationProcessing>
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="angel" />
+        <module name="dubboprovider" />
+        <module name="dubboapi" />
+        <module name="dubboconsumer" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="activemq" target="1.5" />
-      <module name="activfe" target="1.7" />
+    <bytecodeTargetLevel target="8">
+      <module name="angel" target="1.8" />
+      <module name="dubboapi" target="1.8" />
+      <module name="dubboconsumer" target="1.8" />
+      <module name="dubboprovider" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="angel" options="-parameters" />
+      <module name="angel" options="" />
+      <module name="dubboapi" options="" />
+      <module name="dubboconsumer" options="" />
+      <module name="dubboprovider" options="" />
     </option>
   </component>
 </project>
