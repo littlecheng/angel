@@ -1,5 +1,6 @@
 package com.weitao;
 
+import com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure;
 import org.apache.dubbo.config.spring.context.annotation.EnableDubbo;
 import org.apache.dubbo.container.Main;
 import org.mybatis.spring.annotation.MapperScan;
@@ -13,7 +14,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author Administrator
  * @date 2020/5/715:33
  */
-@SpringBootApplication @EnableDubbo @MapperScan(basePackages = "com.weitao.mapper")//配置mapper扫描的路径（Mybatis的mapper接口）
+@SpringBootApplication(exclude = DruidDataSourceAutoConfigure.class) @EnableDubbo @MapperScan(basePackages = "com.weitao.mapper")
+//配置mapper扫描的路径（Mybatis的mapper接口）
 public class HelloDubboServiceUserProviderApplication
 {
     public static void main(String[] args)

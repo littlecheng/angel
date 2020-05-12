@@ -30,6 +30,14 @@ spring:
       prefix: /
       # 给返回的页面添加后缀名
       suffix: .html
+    static-path-pattern: /**
+
+  #热部署
+  devtools:
+    restart:
+      enabled: true
+      ditional-paths: src/main/java
+      exclude: WEB/INF/**
 
 
 #showSql
@@ -60,3 +68,6 @@ dubbo:
   registry:
     address: zookeeper://127.0.0.1:2181
     file: ${user.home}/dubbo-cache/${spring.application.name}/dubbo.cache
+
+
+

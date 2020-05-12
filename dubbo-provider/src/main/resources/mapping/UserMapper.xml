@@ -13,4 +13,12 @@
         select * from user where id = #{id}
     </select>
 
+    <insert id="Save" useGeneratedKeys="true" keyColumn="id" keyProperty="user.id"
+            parameterType="com.weitao.entity.User">
+        insert into user (userName,passWord,realName) values(#{user.userName},#{user.passWord},#{user.realName})
+    </insert>
+
+    <select id="SelectAll" resultType="com.weitao.entity.User">
+        select * from user
+    </select>
 </mapper>
