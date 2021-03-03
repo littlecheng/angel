@@ -31,6 +31,8 @@ spring:
       # 给返回的页面添加后缀名
       suffix: .html
     static-path-pattern: /**
+    favicon:
+      enabled: false
 
   #热部署
   devtools:
@@ -38,8 +40,8 @@ spring:
       enabled: true
       ditional-paths: src/main/java
       exclude: WEB/INF/**
-
-
+  aop:
+    auto: true
 #showSql
 logging:
   level:
@@ -49,7 +51,10 @@ logging:
         init: debug
         controller: info
 
-
+  #设置日志文件路径和文件大小
+  file:
+    path: /data/log
+    max-size: 100KB
 
 dog:
   age: 20
@@ -68,6 +73,9 @@ dubbo:
   registry:
     address: zookeeper://127.0.0.1:2181
     file: ${user.home}/dubbo-cache/${spring.application.name}/dubbo.cache
+
+
+
 
 
 
